@@ -1,0 +1,17 @@
+[
+    {
+         "name": "tiger", "price": 50000, "description": " lonely tiger, from south afrika", "img": "./../pictures/1.JPG"
+    },
+    { 
+        "name": "zebra", "price": 34500, "description": "A handsome and noble striped zebra who loves nature", "img": "./../pictures/2.JPG"
+    },
+    {
+         "name": "bear", "price": 23400, "description": "A white bear that loves nature, is not dangerous to people", "img": "./../pictures/3.JPG"
+    },
+    {
+         "name": "elephant", "price": 987000, "description": "An elephant grows a long body even splashes water around it", "img": "./../pictures/4.JPG"
+    },
+    {
+         "name": "lama", "price": 666600, "description": " fast and gentle", "img": "./../pictures/6.JPG"
+    }
+]
