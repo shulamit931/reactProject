@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React, { useRef, useState } from "react";
+import Login from './components/Login';
 import './App.css';
+import MyRoute from './components/MyRoute';
+import Page from "./components/Page";
+import UserContext from "./components/UserContext";
+
+
 
 function App() {
+  const [isLogin, setIsLogin] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+
+      <UserContext>
+        {
+          !isLogin ?
+            <Login setIsLogin={setIsLogin} /> :
+            <MyRoute />
+        }
+      </UserContext>
+
+
+
+
     </div>
   );
 }
